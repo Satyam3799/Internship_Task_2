@@ -143,9 +143,3 @@ EDA is a critical phase in any data science pipeline. A solid understanding of y
 ---
 
 """
-
-# Save the README for Task 2
-with open("/mnt/data/Task2_EDA_README.md", "w") as f:
-    f.write(task2_readme)
-
-"/mnt/data/Task2_EDA_README.md"
