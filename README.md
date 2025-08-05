@@ -1,8 +1,6 @@
 # Internship_Task_2
 Understand data using statistics and visualizations.
-# Creating the README content for Task 2 (EDA) with detailed explanations and Q&A
 
-task2_readme = """
 # 📊 Internship Task 2: Exploratory Data Analysis (EDA) – Titanic Dataset
 
 ---
