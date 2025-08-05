@@ -35,104 +35,14 @@ We aim to uncover patterns, detect anomalies, understand variable relationships,
 ---
 
 ## 📌 Exploratory Data Analysis (EDA) Summary – Interpretation
-🎯 Objective of EDA
-The main goal of Exploratory Data Analysis is to understand the dataset using visualizations and statistics. This helps in:
+### 🎯 Objective of EDA
+ - The main goal of Exploratory Data Analysis is to understand the dataset using visualizations and statistics. This helps in:
+ - Identifying trends, patterns, or outliers
+ - Understanding distributions of variables
+ - Checking relationships between features
+ - Spotting data quality issues (e.g., nulls, outliers, skewness)
+ - Preparing data for modeling
 
-Identifying trends, patterns, or outliers
-
-Understanding distributions of variables
-
-Checking relationships between features
-
-Spotting data quality issues (e.g., nulls, outliers, skewness)
-
-Preparing data for modeling
-
-🔍 What We Did
-Univariate Analysis
-
-For numeric features like Age, Fare, SibSp, Parch:
-
-Used histograms, KDE, boxplots, violin plots, strip plots, and ECDF plots to explore distribution and outliers.
-
-For categorical features like Survived, Pclass, Sex, and Embarked:
-
-Used countplots, pie charts, donut charts, and bar graphs.
-
-Bivariate Analysis
-
-Categorical vs Categorical:
-
-Created cross-tabs, mosaic plots, and cluster maps to compare groups.
-
-Categorical vs Numerical:
-
-Visualized with barplots, boxplots, swarm, and violin plots to explore survival patterns by age, fare, class, etc.
-
-Numerical vs Numerical:
-
-Used scatter plots, regression plots, hexbin plots, and jointplots to study correlations.
-
-Multivariate Analysis
-
-Created 3D scatter plots using Plotly to visualize three features together (e.g., Age vs Fare vs Parch).
-
-Used pairplots to identify clustering patterns with Survived as hue.
-
-Built pivot tables to extract insights across multiple categorical dimensions (e.g., survival rate by gender and class).
-
-Correlation Analysis
-
-Generated a correlation matrix and heatmap to assess feature relationships.
-
-Identified strong/weak correlations and possible multicollinearity.
-
-🧠 Key Insights
-Females and upper-class passengers had higher survival rates
-
-Fare is positively correlated with Survival
-
-High Pclass (3rd class) passengers had the lowest survival probability
-
-SibSp and Parch show some correlation (family size impact)
-
-Outliers present in Fare and Age were treated using the IQR method
-
-Null values in Cabin (77%) led to column drop; other nulls were imputed
-
-📚 What We Learned
-How to perform deep visual EDA on both numerical and categorical variables
-
-Techniques to detect outliers, skewness, and multicollinearity
-
-The value of data visualization in storytelling and decision-making
-
-A clean dataset with strong EDA lays the foundation for building ML models
-
-💬 Conceptual Q&A Summary
-Q1. What is the purpose of EDA?
-To convert raw data into understanding through statistics and visualizations.
-
-Q2. How do boxplots help?
-They highlight medians, IQR, and outliers for numeric variables.
-
-Q3. What is correlation and why is it useful?
-It measures linear relationships and helps in identifying predictive or redundant features.
-
-Q4. How do you detect skewness?
-Using histograms, KDE plots, boxplots, or .skew() function.
-
-Q5. What is multicollinearity?
-When features are highly correlated, leading to redundancy in models.
-
-Q6. What tools are used in EDA?
-Pandas, Seaborn, Matplotlib, Plotly, Statsmodels.
-
-Q7. How did EDA help detect a problem?
-Identified 77% missing values in Cabin → led to column removal.
-
-Q8. What is the role of visualization in ML?
-It helps understand feature importance, guides model selection, and supports communication with stakeholders.
 
 ## 🔍 Process & Approach
 
